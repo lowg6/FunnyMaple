@@ -1,0 +1,55 @@
+﻿Build started 10/27/2014 22:48:30.
+     1>Project "C:\Users\User\Documents\Visual Studio 2013\Projects\FunnyMaple\FunnyMaple\FunnyMaple.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Moc'ing MainForm.h...
+         Uic'ing MainForm.ui...
+         Rcc'ing FunnyMaple.qrc...
+     1>RCC : warning : No resources in 'C:\Users\User\Documents\Visual Studio 2013\Projects\FunnyMaple\FunnyMaple\FunnyMaple.qrc'.
+         
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.6\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.6\include\QtCore /IC:\Qt\4.8.6\include\QtGui /IC:\boost\boost_1_55_0 /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Functor.cpp GeneratedFiles\Release\moc_MainForm.cpp main.cpp MainForm.cpp MapleStory\Bot.cpp MapleStory\Bypass.cpp MapleStory\Data.cpp MapleStory\Hack.cpp MapleStory\Item.cpp MapleStory\Login.cpp MapleStory\MapleStory.cpp MapleStory\Packet.cpp MapleStory\Win32Api.cpp
+         Functor.cpp
+         moc_MainForm.cpp
+         main.cpp
+         MainForm.cpp
+     1>MainForm.cpp(21): error C2039: 'treeWidgetRecentDropList' : is not a member of 'Ui::MainFormClass'
+                 .\GeneratedFiles\ui_MainForm.h(931) : see declaration of 'Ui::MainFormClass'
+     1>MainForm.cpp(21): error C2227: left of '->addAction' must point to class/struct/union/generic type
+     1>MainForm.cpp(22): error C2039: 'treeWidgetRecentDropList' : is not a member of 'Ui::MainFormClass'
+                 .\GeneratedFiles\ui_MainForm.h(931) : see declaration of 'Ui::MainFormClass'
+     1>MainForm.cpp(22): error C2227: left of '->addAction' must point to class/struct/union/generic type
+     1>MainForm.cpp(25): error C2039: 'treeWidgetRecentDropList' : is not a member of 'Ui::MainFormClass'
+                 .\GeneratedFiles\ui_MainForm.h(931) : see declaration of 'Ui::MainFormClass'
+     1>MainForm.cpp(25): error C2227: left of '->setColumnWidth' must point to class/struct/union/generic type
+     1>MainForm.cpp(235): error C2039: 'checkBoxRecordRecentDrop' : is not a member of 'Ui::MainFormClass'
+                 .\GeneratedFiles\ui_MainForm.h(931) : see declaration of 'Ui::MainFormClass'
+     1>MainForm.cpp(235): error C2227: left of '->isChecked' must point to class/struct/union/generic type
+     1>MainForm.cpp(318): error C2039: 'treeWidgetRecentDropList' : is not a member of 'Ui::MainFormClass'
+                 .\GeneratedFiles\ui_MainForm.h(931) : see declaration of 'Ui::MainFormClass'
+     1>MainForm.cpp(318): error C2227: left of '->findItems' must point to class/struct/union/generic type
+     1>MainForm.cpp(331): error C2039: 'treeWidgetRecentDropList' : is not a member of 'Ui::MainFormClass'
+                 .\GeneratedFiles\ui_MainForm.h(931) : see declaration of 'Ui::MainFormClass'
+     1>MainForm.cpp(331): error C2227: left of '->addTopLevelItem' must point to class/struct/union/generic type
+     1>MainForm.cpp(350): error C2039: 'checkBoxRecordRecentDrop' : is not a member of 'Ui::MainFormClass'
+                 .\GeneratedFiles\ui_MainForm.h(931) : see declaration of 'Ui::MainFormClass'
+     1>MainForm.cpp(460): error C2039: 'treeWidgetRecentDropList' : is not a member of 'Ui::MainFormClass'
+                 .\GeneratedFiles\ui_MainForm.h(931) : see declaration of 'Ui::MainFormClass'
+     1>MainForm.cpp(460): error C2227: left of '->currentItem' must point to class/struct/union/generic type
+     1>MainForm.cpp(472): error C2039: 'treeWidgetRecentDropList' : is not a member of 'Ui::MainFormClass'
+                 .\GeneratedFiles\ui_MainForm.h(931) : see declaration of 'Ui::MainFormClass'
+     1>MainForm.cpp(472): error C2227: left of '->clear' must point to class/struct/union/generic type
+         Bot.cpp
+         Bypass.cpp
+         Data.cpp
+         Hack.cpp
+         Item.cpp
+         Login.cpp
+         MapleStory.cpp
+         Packet.cpp
+         Win32Api.cpp
+         Generating Code...
+     1>Done Building Project "C:\Users\User\Documents\Visual Studio 2013\Projects\FunnyMaple\FunnyMaple\FunnyMaple.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:32.57

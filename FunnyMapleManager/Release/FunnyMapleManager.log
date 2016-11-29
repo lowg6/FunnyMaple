@@ -1,0 +1,38 @@
+﻿Build started 6/8/2014 6:10:55.
+     1>Project "C:\Users\User\Documents\Visual Studio 2013\Projects\FunnyMaple\FunnyMapleManager\FunnyMapleManager.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Moc'ing MainForm.h...
+         Uic'ing MainForm.ui...
+         Rcc'ing FunnyMapleManager.qrc...
+         Moc'ing AccountAdditionForm.h...
+         Uic'ing AccountAdditionForm.ui...
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.5\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.5\include\QtCore /IC:\Qt\4.8.5\include\QtGui /IC:\boost\boost_1_53_0 /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AccountAdditionForm.cpp Functor.cpp GeneratedFiles\Release\moc_AccountAdditionForm.cpp GeneratedFiles\Release\moc_MainForm.cpp MainForm.cpp main.cpp
+         AccountAdditionForm.cpp
+         Functor.cpp
+         moc_AccountAdditionForm.cpp
+         moc_MainForm.cpp
+         MainForm.cpp
+         main.cpp
+         Generating Code...
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.5\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.5\include\QtCore /IC:\Qt\4.8.5\include\QtGui /IC:\boost\boost_1_53_0 /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\qrc_FunnyMapleManager.cpp
+         qrc_FunnyMapleManager.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\FunnyMapleManager.res" FunnyMapleManager.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\Documents\Visual Studio 2013\Projects\FunnyMaple\Win32\Release\\FunnyMapleManager.exe" /NOLOGO /LIBPATH:C:\Qt\4.8.5\lib /LIBPATH:C:\boost\boost_1_53_0\stage\lib kernel32.lib user32.lib shell32.lib uuid.lib ole32.lib advapi32.lib ws2_32.lib gdi32.lib comdlg32.lib oleaut32.lib imm32.lib winmm.lib winspool.lib ws2_32.lib ole32.lib user32.lib advapi32.lib qtmain.lib QtCore.lib QtGui.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\FunnyMapleManager.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:\Users\User\Documents\Visual Studio 2013\Projects\FunnyMaple\Win32\Release\FunnyMapleManager.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\User\Documents\Visual Studio 2013\Projects\FunnyMaple\Win32\Release\FunnyMapleManager.lib" /MACHINE:X86 Release\FunnyMapleManager.res
+         Release\AccountAdditionForm.obj
+         Release\Functor.obj
+         Release\moc_AccountAdditionForm.obj
+         Release\moc_MainForm.obj
+         Release\MainForm.obj
+         Release\qrc_FunnyMapleManager.obj
+         Release\main.obj
+         FunnyMapleManager.vcxproj -> C:\Users\User\Documents\Visual Studio 2013\Projects\FunnyMaple\Win32\Release\FunnyMapleManager.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\User\Documents\Visual Studio 2013\Projects\FunnyMaple\Win32\Release\\FunnyMapleManager.exe;#1" /manifest Release\FunnyMapleManager.exe.intermediate.manifest
+     1>Done Building Project "C:\Users\User\Documents\Visual Studio 2013\Projects\FunnyMaple\FunnyMapleManager\FunnyMapleManager.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:15.64

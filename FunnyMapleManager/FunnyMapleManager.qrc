@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="FunnyMapleManager">
+    <file>Resources/MapleStory.png</file>
+    <file>Resources/close_delete_2.png</file>
+    <file>Resources/folder.png</file>
+    <file>Resources/play.png</file>
+    <file>Resources/save_as.png</file>
+    <file>Resources/Penguin_1.png</file>
+    <file>Resources/Penguin_1.ico</file>
+  </qresource>
+</RCC>

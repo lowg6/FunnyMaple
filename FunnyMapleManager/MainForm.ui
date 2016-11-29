@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainFormClass</class>
+ <widget class="QMainWindow" name="MainFormClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>531</width>
+    <height>536</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FunnyMapleManager</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="FunnyMapleManager.qrc">
+    <normaloff>:/FunnyMapleManager/Resources/Penguin_1.png</normaloff>:/FunnyMapleManager/Resources/Penguin_1.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+background:white;
+}
+
+QStatusBar
+{
+background:white;
+border-top:1px solid gray;
+}
+
+QTabWidget::pane
+{
+background:white;
+border:1px solid gray;
+}
+
+QTabWidget#tabwMain::pane
+{
+background:white;
+border:none;
+border-top:1px solid gray;
+}
+
+QGroupBox
+{
+border:1px solid gray;
+margin-top:5px;
+}
+
+QGroupBox::title
+{
+color:blue;
+top:-7px;
+left:5px;
+}
+
+QCheckBox:checked
+{
+color:green;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0" colspan="2">
+     <widget class="QTreeWidget" name="treeWidgetAccountList">
+      <property name="contextMenuPolicy">
+       <enum>Qt::ActionsContextMenu</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="indentation">
+       <number>0</number>
+      </property>
+      <property name="uniformRowHeights">
+       <bool>true</bool>
+      </property>
+      <column>
+       <property name="text">
+        <string>　</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Username</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Password</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>2nd Password</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>World</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Ch.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Char.</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpenSetting"/>
+   <addaction name="actionSaveSetting"/>
+   <addaction name="separator"/>
+   <addaction name="actionLaunchProcess"/>
+   <addaction name="actionTerminateProcess"/>
+   <addaction name="separator"/>
+   <addaction name="actionSetPath"/>
+  </widget>
+  <action name="actionSetPath">
+   <property name="icon">
+    <iconset resource="FunnyMapleManager.qrc">
+     <normaloff>:/FunnyMapleManager/Resources/MapleStory.png</normaloff>:/FunnyMapleManager/Resources/MapleStory.png</iconset>
+   </property>
+   <property name="text">
+    <string>Set Path</string>
+   </property>
+  </action>
+  <action name="actionLaunchProcess">
+   <property name="icon">
+    <iconset resource="FunnyMapleManager.qrc">
+     <normaloff>:/FunnyMapleManager/Resources/play.png</normaloff>:/FunnyMapleManager/Resources/play.png</iconset>
+   </property>
+   <property name="text">
+    <string>Launch</string>
+   </property>
+  </action>
+  <action name="actionTerminateProcess">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="FunnyMapleManager.qrc">
+     <normaloff>:/FunnyMapleManager/Resources/close_delete_2.png</normaloff>:/FunnyMapleManager/Resources/close_delete_2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Terminate</string>
+   </property>
+  </action>
+  <action name="actionAddToAccountList">
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionDeleteFromAccountList">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionSaveSetting">
+   <property name="icon">
+    <iconset resource="FunnyMapleManager.qrc">
+     <normaloff>:/FunnyMapleManager/Resources/save_as.png</normaloff>:/FunnyMapleManager/Resources/save_as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionOpenSetting">
+   <property name="icon">
+    <iconset resource="FunnyMapleManager.qrc">
+     <normaloff>:/FunnyMapleManager/Resources/folder.png</normaloff>:/FunnyMapleManager/Resources/folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="FunnyMapleManager.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionSetPath</sender>
+   <signal>triggered()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>Action_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>397</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionLaunchProcess</sender>
+   <signal>triggered()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>Action_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>397</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTerminateProcess</sender>
+   <signal>triggered()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>Action_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>397</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAddToAccountList</sender>
+   <signal>triggered()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>Action_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>339</x>
+     <y>272</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDeleteFromAccountList</sender>
+   <signal>triggered()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>Action_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>339</x>
+     <y>272</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOpenSetting</sender>
+   <signal>triggered()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>Action_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>257</x>
+     <y>267</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSaveSetting</sender>
+   <signal>triggered()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>Action_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>257</x>
+     <y>267</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Action_Triggered()</slot>
+ </slots>
+</ui>

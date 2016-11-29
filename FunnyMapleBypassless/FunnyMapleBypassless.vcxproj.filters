@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Form\Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Form\Generated Files\Debug">
+      <UniqueIdentifier>{b0eed77c-31c9-4252-aa7f-af7605e4bf92}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Form\Generated Files\Release">
+      <UniqueIdentifier>{db079434-8fbe-48d4-86c7-db52f2c2a58b}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="MapleStory">
+      <UniqueIdentifier>{c84229e1-6d78-4db4-9f95-bf8240e31a15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form\MainForm">
+      <UniqueIdentifier>{7f8f8200-61bf-4e3e-8efc-a461bfdd7b3b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainForm.cpp">
+      <Filter>Form\Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainForm.cpp">
+      <Filter>Form\Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_FunnyMapleBypassless.cpp">
+      <Filter>Form\Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Functor.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MapleStory\Data.cpp">
+      <Filter>MapleStory</Filter>
+    </ClCompile>
+    <ClCompile Include="MapleStory\Hack.cpp">
+      <Filter>MapleStory</Filter>
+    </ClCompile>
+    <ClCompile Include="MapleStory\MapleStory.cpp">
+      <Filter>MapleStory</Filter>
+    </ClCompile>
+    <ClCompile Include="MapleStory\Packet.cpp">
+      <Filter>MapleStory</Filter>
+    </ClCompile>
+    <ClCompile Include="MapleStory\Win32Api.cpp">
+      <Filter>MapleStory</Filter>
+    </ClCompile>
+    <ClCompile Include="MainForm.cpp">
+      <Filter>Form\MainForm</Filter>
+    </ClCompile>
+    <ClCompile Include="MapleStory\Bot.cpp">
+      <Filter>MapleStory</Filter>
+    </ClCompile>
+    <ClCompile Include="MapleStory\Item.cpp">
+      <Filter>MapleStory</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="FunnyMapleBypassless.qrc">
+      <Filter>Form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MainForm.h">
+      <Filter>Form\MainForm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MainForm.ui">
+      <Filter>Form\MainForm</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_MainForm.h">
+      <Filter>Form\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiInclude.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualKey.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Functor.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="MapleStory\Address.h">
+      <Filter>MapleStory</Filter>
+    </ClInclude>
+    <ClInclude Include="MapleStory\Data.h">
+      <Filter>MapleStory</Filter>
+    </ClInclude>
+    <ClInclude Include="MapleStory\Hack.h">
+      <Filter>MapleStory</Filter>
+    </ClInclude>
+    <ClInclude Include="MapleStory\MapleStory.h">
+      <Filter>MapleStory</Filter>
+    </ClInclude>
+    <ClInclude Include="MapleStory\Packet.h">
+      <Filter>MapleStory</Filter>
+    </ClInclude>
+    <ClInclude Include="MapleStory\Win32Api.h">
+      <Filter>MapleStory</Filter>
+    </ClInclude>
+    <ClInclude Include="MapleStory\Bot.h">
+      <Filter>MapleStory</Filter>
+    </ClInclude>
+    <ClInclude Include="MapleStory\Item.h">
+      <Filter>MapleStory</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

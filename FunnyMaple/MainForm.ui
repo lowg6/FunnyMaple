@@ -1,0 +1,1470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainFormClass</class>
+ <widget class="QMainWindow" name="MainFormClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>415</width>
+    <height>476</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FunnyMaple</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+background:white;
+}
+
+QTabWidget::pane
+{
+background:white;
+border:1px solid gray;
+}
+
+QTabWidget#tabwMain::pane
+{
+background:white;
+border:none;
+border-top:1px solid gray;
+border-bottom:1px solid gray;
+}
+
+QGroupBox
+{
+border:1px solid gray;
+margin-top:5px;
+}
+
+QGroupBox::title
+{
+color:blue;
+top:-7px;
+left:5px;
+}
+
+QCheckBox:checked
+{
+color:green;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="margin">
+     <number>3</number>
+    </property>
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <item row="0" column="2">
+     <widget class="QTabWidget" name="tabWidgetMain">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="tabHome">
+       <attribute name="title">
+        <string>Home</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <property name="margin">
+         <number>3</number>
+        </property>
+        <item row="1" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="title">
+           <string>Hacks</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="1" colspan="2">
+            <widget class="QCheckBox" name="checkBoxFullGuard">
+             <property name="text">
+              <string>7 Times Guard</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="checkBoxGenericNoDelay">
+             <property name="text">
+              <string>Generic No Delay</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBoxNoKnockBack">
+             <property name="text">
+              <string>No Knock Back</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QCheckBox" name="checkBoxMobFreezeStrong">
+             <property name="text">
+              <string>Mob Freeze Strong</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="0">
+            <widget class="QCheckBox" name="checkBoxNoMeteor">
+             <property name="text">
+              <string>No Meteor</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBoxFullGodMode">
+             <property name="text">
+              <string>58 Secs God Mode</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="checkBoxReactorDem">
+             <property name="text">
+              <string>Reactor Dem</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QCheckBox" name="checkBoxJumpDownAnywhere">
+             <property name="text">
+              <string>Jump Down Anywhere</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QCheckBox" name="checkBoxMobFreeze">
+             <property name="text">
+              <string>Mob Freeze</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QCheckBox" name="checkBoxMobDisarm">
+             <property name="text">
+              <string>Mob Disarm</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QCheckBox" name="checkBoxNoMobActionByDamaged">
+             <property name="text">
+              <string>No Mob Action By Damaged</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="1">
+            <widget class="QCheckBox" name="checkBoxResetBlockedQuests">
+             <property name="text">
+              <string>Reset Blocked Quests</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="title">
+           <string>Speed Hack</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="QSlider" name="horizontalSliderSpeedHack">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>10</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="tickPosition">
+              <enum>QSlider::TicksBelow</enum>
+             </property>
+             <property name="tickInterval">
+              <number>1</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="title">
+           <string>Infomation</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="8" column="0" rowspan="2">
+            <widget class="QWidget" name="widget" native="true">
+             <layout class="QGridLayout" name="gridLayout_7">
+              <property name="margin">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QLabel" name="labelInfomationWorld">
+                <property name="text">
+                 <string>World: None</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="labelInfomationAttackCount">
+                <property name="text">
+                 <string>Attacks: None</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="labelInfomationMapId">
+                <property name="text">
+                 <string>Map: None</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="labelInfomationItemCount">
+                <property name="text">
+                 <string>Items: None</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="8" column="1" rowspan="2">
+            <widget class="QWidget" name="widget_2" native="true">
+             <layout class="QGridLayout" name="gridLayout_9">
+              <property name="margin">
+               <number>0</number>
+              </property>
+              <item row="2" column="0">
+               <widget class="QLabel" name="labelInfomationChannel">
+                <property name="text">
+                 <string>Channel: None</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="labelInfomationPosition">
+                <property name="text">
+                 <string>Pos: None</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0">
+               <widget class="QLabel" name="labelInfomationPeopleCount">
+                <property name="text">
+                 <string>People: None</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="labelInfomationMobCount">
+                <property name="text">
+                 <string>Mobs: None</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QProgressBar" name="progressBarInfomationHp">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QProgressBar
+{
+border:1px solid gray;
+margin-top:15px;
+}
+
+QProgressBar::chunk
+{
+background:red;
+margin:1px;
+}</string>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+             <property name="format">
+              <string>Hp: 0 / 0 (%p%)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QProgressBar" name="progressBarInfomationMp">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QProgressBar
+{
+border:1px solid gray;
+margin-top:15px;
+}
+
+QProgressBar::chunk
+{
+background:blue;
+margin:1px;
+}</string>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+             <property name="format">
+              <string>Mp: 0 / 0 (%p%)</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0" rowspan="2" colspan="2">
+         <widget class="QGroupBox" name="groupBox_12">
+          <property name="title">
+           <string>Packets</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_16">
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButtonSendPacket">
+             <property name="text">
+              <string>Send</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLineEdit" name="lineEditSendPacket"/>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QCheckBox" name="checkBoxOneClickBoardGameDisconnect">
+             <property name="text">
+              <string>One Click Board Game Disconnect</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabBot">
+       <attribute name="title">
+        <string>Bot</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_18">
+        <property name="margin">
+         <number>3</number>
+        </property>
+        <item row="1" column="0" rowspan="2">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>General</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="1" colspan="2">
+            <widget class="QComboBox" name="comboBoxBotMethodList">
+             <item>
+              <property name="text">
+               <string>None</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Kami Vac</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Kami Vac Loot Included</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Mu Lung Dojo To Farm Mu Gong's Soul</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Commerci Experience Exploit</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Method:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="title">
+           <string>Auto Action</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_15">
+           <item row="1" column="3">
+            <widget class="QSpinBox" name="spinBoxBotAutoLootDelay">
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QSpinBox" name="spinBoxBotAutoAttackDelay">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBoxBotAutoAttack">
+             <property name="text">
+              <string>Auto Attack (Del) Every MSecs</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBoxBotAutoLoot">
+             <property name="text">
+              <string>Auto Loot (Z) Every MSecs</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="0" colspan="4">
+            <widget class="QGroupBox" name="groupBox_11">
+             <property name="title">
+              <string>For Demon Slayer</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_19">
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="spinBoxBotAutoChaosLockAttackCount">
+                <property name="minimum">
+                 <number>0</number>
+                </property>
+                <property name="maximum">
+                 <number>100</number>
+                </property>
+                <property name="value">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QCheckBox" name="checkBoxBotAutoChaosLock">
+                <property name="text">
+                 <string>Auto CL (Space) Every Atts</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QCheckBox" name="checkBoxBotAutoFuryAttack">
+                <property name="text">
+                 <string>Auto Fury Attack (Ctrl) At Val</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QSpinBox" name="spinBoxBotAutoFuryAttackValue">
+                <property name="maximum">
+                 <number>999</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>Auto Recovery</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBoxBotAutoHp">
+             <property name="text">
+              <string>Auto HP (End) At Val</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="checkBoxBotAutoMp">
+             <property name="text">
+              <string>Auto MP (PgDn) At Val</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QSpinBox" name="spinBoxBotAutoMpValue">
+             <property name="maximum">
+              <number>500000</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QSpinBox" name="spinBoxBotAutoHpValue">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>500000</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>Auto Skill</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_13">
+           <item row="5" column="0">
+            <widget class="QCheckBox" name="checkBoxBotAutoSkill5">
+             <property name="text">
+              <string>Auto Skill (5) Every Secs</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QCheckBox" name="checkBoxBotAutoSkill4">
+             <property name="text">
+              <string>Auto Skill (4) Every Secs</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSpinBox" name="spinBoxBotAutoSkill2Delay">
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QSpinBox" name="spinBoxBotAutoSkill3Delay">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QSpinBox" name="spinBoxBotAutoSkill4Delay">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QSpinBox" name="spinBoxBotAutoSkill5Delay">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="spinBoxBotAutoSkill1Delay">
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBoxBotAutoSkill1">
+             <property name="text">
+              <string>Auto Skill (1) Every Secs</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="checkBoxBotAutoSkill2">
+             <property name="text">
+              <string>Auto Skill (2) Every Secs</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QCheckBox" name="checkBoxBotAutoSkill3">
+             <property name="text">
+              <string>Auto Skill (3) Every Secs</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabItem">
+       <attribute name="title">
+        <string>Item</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="5" column="2" rowspan="2">
+         <widget class="QPushButton" name="pushButtonAddToItemFilterList">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0" colspan="3">
+         <widget class="QTreeWidget" name="treeWidgetItemFilterList">
+          <property name="contextMenuPolicy">
+           <enum>Qt::ActionsContextMenu</enum>
+          </property>
+          <property name="indentation">
+           <number>0</number>
+          </property>
+          <property name="uniformRowHeights">
+           <bool>true</bool>
+          </property>
+          <property name="sortingEnabled">
+           <bool>true</bool>
+          </property>
+          <column>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Name</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="lineEditAddToItemFilterListName"/>
+        </item>
+        <item row="5" column="1">
+         <widget class="QSpinBox" name="spinBoxAddToItemFilterListId">
+          <property name="maximum">
+           <number>2147483647</number>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>ID</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Name</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="3">
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="3">
+         <widget class="QWidget" name="widget_5" native="true">
+          <layout class="QGridLayout" name="gridLayout_12">
+           <property name="margin">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBoxEnableItemFilter">
+             <property name="text">
+              <string>Enable</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBoxItemFilterWhitelist">
+             <property name="text">
+              <string>Whitelist</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QCheckBox" name="checkBoxDropMesoOnly">
+             <property name="text">
+              <string>Drop Mesos Only</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QWidget" name="widget_3" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pushButtonSaveSetting">
+         <property name="text">
+          <string>Save Setting</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonOpenSetting">
+         <property name="text">
+          <string>Open Setting</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonHideWindow">
+         <property name="text">
+          <string>Hide Window (F9)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBoxStatusBot">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Bot (F1)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_4" native="true">
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Char:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QSpinBox" name="spinBoxLoginCharacterNumber">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionDeleteFromItemFilterList">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/FunnyMaple/Resources/page_white_delete.png</normaloff>:/FunnyMaple/Resources/page_white_delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionClearItemFilterList">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/FunnyMaple/Resources/cross.png</normaloff>:/FunnyMaple/Resources/cross.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+  <action name="actionClearRecentDropList">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/FunnyMaple/Resources/cross.png</normaloff>:/FunnyMaple/Resources/cross.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+  <action name="actionDeleteFromRecentDropList">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/FunnyMaple/Resources/page_white_delete.png</normaloff>:/FunnyMaple/Resources/page_white_delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="FunnyMaple.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>checkBoxDropMesoOnly</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>318</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxItemFilterWhitelist</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>242</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDeleteFromItemFilterList</sender>
+   <signal>triggered()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>Action_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>136</x>
+     <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxGenericNoDelay</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>396</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxMobFreeze</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>396</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxReactorDem</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxMobFreezeStrong</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionClearItemFilterList</sender>
+   <signal>triggered()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>Action_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>134</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionClearRecentDropList</sender>
+   <signal>triggered()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>Action_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>134</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDeleteFromRecentDropList</sender>
+   <signal>triggered()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>Action_Triggered()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>134</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonSaveSetting</sender>
+   <signal>clicked()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>PushButton_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>99</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>100</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonOpenSetting</sender>
+   <signal>clicked()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>PushButton_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>231</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxMobDisarm</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>80</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxJumpDownAnywhere</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>396</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>36</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxFullGodMode</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>81</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxFullGuard</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>182</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxNoMobActionByDamaged</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>396</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>32</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonAddToItemFilterList</sender>
+   <signal>clicked()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>PushButton_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>347</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>282</x>
+     <y>122</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxEnableItemFilter</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>73</x>
+     <y>452</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxNoMeteor</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>452</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxNoKnockBack</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>82</x>
+     <y>475</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxResetBlockedQuests</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>396</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>72</x>
+     <y>487</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxStatusBot</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>48</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>52</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonHideWindow</sender>
+   <signal>clicked()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>PushButton_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>62</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSliderSpeedHack</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>Slider_ValueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>444</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>487</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBoxOneClickBoardGameDisconnect</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>CheckBox_Toggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>191</x>
+     <y>389</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>448</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonSendPacket</sender>
+   <signal>clicked()</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>PushButton_Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>366</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>487</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBoxLoginCharacterNumber</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainFormClass</receiver>
+   <slot>SpinBox_ValueChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>92</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>312</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>CheckBox_Toggled(bool)</slot>
+  <slot>PushButton_Clicked()</slot>
+  <slot>Action_Triggered()</slot>
+  <slot>Slider_ValueChanged(int)</slot>
+  <slot>SpinBox_ValueChanged(int)</slot>
+ </slots>
+</ui>

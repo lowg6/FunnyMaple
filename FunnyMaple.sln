@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FunnyMaple", "FunnyMaple\FunnyMaple.vcxproj", "{76B25F89-0A8A-489C-B1DF-1A72124E4496}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FunnyMapleManager", "FunnyMapleManager\FunnyMapleManager.vcxproj", "{6C41773D-C9F0-44CF-948B-659738922C92}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FunnyMapleBypassless", "FunnyMapleBypassless\FunnyMapleBypassless.vcxproj", "{30490852-779B-438A-BC6E-A958E7C16ABC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76B25F89-0A8A-489C-B1DF-1A72124E4496}.Debug|Win32.ActiveCfg = Debug|Win32
+		{76B25F89-0A8A-489C-B1DF-1A72124E4496}.Debug|Win32.Build.0 = Debug|Win32
+		{76B25F89-0A8A-489C-B1DF-1A72124E4496}.Release|Win32.ActiveCfg = Release|Win32
+		{76B25F89-0A8A-489C-B1DF-1A72124E4496}.Release|Win32.Build.0 = Release|Win32
+		{6C41773D-C9F0-44CF-948B-659738922C92}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C41773D-C9F0-44CF-948B-659738922C92}.Debug|Win32.Build.0 = Debug|Win32
+		{6C41773D-C9F0-44CF-948B-659738922C92}.Release|Win32.ActiveCfg = Release|Win32
+		{6C41773D-C9F0-44CF-948B-659738922C92}.Release|Win32.Build.0 = Release|Win32
+		{30490852-779B-438A-BC6E-A958E7C16ABC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{30490852-779B-438A-BC6E-A958E7C16ABC}.Debug|Win32.Build.0 = Debug|Win32
+		{30490852-779B-438A-BC6E-A958E7C16ABC}.Release|Win32.ActiveCfg = Release|Win32
+		{30490852-779B-438A-BC6E-A958E7C16ABC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
